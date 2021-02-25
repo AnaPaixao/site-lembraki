@@ -63,3 +63,56 @@ nav img {
     width: 250px;
 
 }
+
+
+/*========== TEAM ============*/
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    background-color: #BC4242;
+    border-bottom: 5px solid #862929;
+    padding: 60px;
+}
+
+.team div {
+    text-align: center;
+}
+
+.team div img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.4);
+}
+
+/*===========FORM=============*/
+.form {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form .feedback-message p {
+    width: 360px;
+    text-align: center;
+}
+
+.form .feedback-message p:after,
+.form .feedback-message p:before  {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 3px;
+    background: #862929;
+    margin: 60px auto 8px auto;
+}
+
+.form .feedback-message p:before {
+    margin: 8px auto 60px auto;
+}
