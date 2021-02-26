@@ -10,6 +10,10 @@ a {
     text-decoration: none;
 }
 
+.border-bottom {
+    border-bottom: solid #862929 2px;
+}
+
 .main-container {
     max-width: 100vw;
 }
@@ -91,11 +95,18 @@ nav img {
     display: flex;
     justify-content: space-around;
     padding: 60px;
+    border-bottom: 5px solid #862929;
 }
 
 .form form {
     display: flex;
     flex-direction: column;
+}
+
+.form .feedback-message {
+    display: flex;
+    align-items: center;
+    padding-bottom: 80px;
 }
 
 .form .feedback-message p {
@@ -115,4 +126,54 @@ nav img {
 
 .form .feedback-message p:before {
     margin: 8px auto 60px auto;
+}
+
+.form form label {
+    margin-bottom: 8px;
+}
+
+.form form input {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 35px;
+}
+
+.form form input, .form form textarea {
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    outline: none;
+    border: solid 1px #000;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+.form form textarea {
+    margin-bottom: 20px;
+}
+
+.form button {
+    width: 130px;
+    height: 40px;
+    background-color: #862929;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+}
+
+.form button:hover {
+    background-color: #BC4242;
+}
+
+/*============ FOOTER ==============*/
+
+footer {
+    background-color: #BC4242;
+    height: 100px;
+    padding: 30px 40px;
+    color: #FFF;
+    font-weight: lighter;
+}
+
+footer p:nth-child(1) {
+    margin-bottom:2px
 }
